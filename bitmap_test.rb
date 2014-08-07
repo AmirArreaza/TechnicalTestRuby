@@ -18,10 +18,25 @@ class BitmapEditorTest < Test::Unit::TestCase
 
   def test_print_bitmap
     b = BitmapEditor.new
+    b.S
     b.I(2,2)
+    b.S
     b.I(4,'A')
+    b.S
     b.I(2,10)
-    b.I()
+    b.S
+  end
+
+  def test_colour_bitmap
+    b = BitmapEditor.new
+    b.I(5,5)
+
+    b.I(5,5,'B')
+    b.S
+
+    b.V(2,2,3,'E')
+    b.H(2,5,3,'Z')
+    b.S
   end
 
 end
