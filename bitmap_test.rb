@@ -31,11 +31,11 @@ class BitmapEditorTest < Test::Unit::TestCase
     b = BitmapEditor.new
     b.I(5,5)
 
-    b.I(5,5,'B')
-    b.S
+    b.I(10,10)
 
     b.V(2,2,3,'E')
     b.H(2,5,3,'Z')
+    b.F(6,2,'G')
     b.S
   end
 
